@@ -1,0 +1,64 @@
+<mvc:View controllerName="kpk.kandroid.C" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" height="100%">
+
+	<Panel height="auto" class="chat-header-panel">
+		<FlexBox height="100px" alignItems="Center" justifyContent="Center">
+			<items>
+				<VBox alignItems="Center" justifyContent="Center">
+					<Image src="kandroid-logo.png" densityAware="false" width="">
+					</Image>
+					<ObjectIdentifier title="KanDroid"></ObjectIdentifier>
+					<Text text="Self proclaimed funny bot"></Text>
+				</VBox>
+			</items>
+		</FlexBox>
+	</Panel>
+	<Panel height="auto" class="chat-messages-panel">
+		<l:Grid defaultSpan="L12 M12 S12" class="sapUiSmallMarginTop">
+			<l:content>
+				<NotificationListItem description="And with a very long description and long labels of the action buttons - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc." showCloseButton="false" datetime="1 hour" unread="false" priority="None" authorName="You" authorPicture="test-resources/sap/m/images/Woman_04.png">
+					<layoutData>
+						<l:GridData indent="L4 M4 S0" span="L8 M8 S12" />
+					</layoutData>
+				</NotificationListItem>
+
+				<NotificationListItem description="Short description" showCloseButton="false" datetime="3 days" unread="true" priority="Low" authorName="KanDroid" authorPicture="sap-icon://group">
+					<layoutData>
+						<l:GridData span="L8 M8 S12" />
+					</layoutData>
+				</NotificationListItem>
+				<NotificationListItem description="And with a very long description and long labels of the action buttons - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc." showCloseButton="false" datetime="1 hour" unread="false" priority="None" authorName="You" authorPicture="test-resources/sap/m/images/Woman_04.png">
+					<layoutData>
+						<l:GridData indent="L4 M4 S0" span="L8 M8 S12" />
+					</layoutData>
+				</NotificationListItem>
+				<NotificationListItem description="Short description" showCloseButton="false" datetime="3 days" unread="true" priority="Low" authorName="KanDroid" authorPicture="sap-icon://group">
+					<layoutData>
+						<l:GridData span="L8 M8 S12" />
+					</layoutData>
+				</NotificationListItem>
+			</l:content>
+		</l:Grid>
+	</Panel>
+
+	<Panel height="auto" class="chat-input-panel">
+		<FlexBox alignItems="Start">
+			<items>
+				<Input placeholder="Type your message" width="100%" class="sapUiSmallMarginEnd">
+				<layoutData>
+					<FlexItemData growFactor="10" />
+				</layoutData>
+				</Input>
+				<Button text="Send" icon="sap-icon://paper-plane" width="100%" class="sapUiSmallMarginEnd">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Button>
+				<Button width="100%" icon="sap-icon://microphone" type="Emphasized">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Button>
+			</items>
+		</FlexBox>
+	</Panel>
+</mvc:View>

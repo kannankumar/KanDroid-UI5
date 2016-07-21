@@ -1,0 +1,16 @@
+.hat-header-panel {
+	z-index: 3;
+	position: fixed;
+	top: 0
+}
+
+.hat-messages-panel {
+	padding: 200px auto;
+	overflow-y: scroll;
+}
+
+.hat-input-panel {
+	z-index: 3;
+	position: fixed;
+	bottom: 0
+}
