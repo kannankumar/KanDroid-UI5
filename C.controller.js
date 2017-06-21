@@ -8,7 +8,8 @@ sap.ui.define([
 	var CController = Controller.extend("kpk.kandroid.C", {
 		onInit: function () {
 			var oThis = this;
-			oThis.accessToken = "0a863377b34143728d5b3323b14e8fc7";
+			//oThis.accessToken = "0a863377b34143728d5b3323b14e8fc7";
+			oThis.accessToken = "bf6e310e656b45ac9ec02bd805c90d9b";
 			oThis.baseUrl = "https://api.api.ai/v1/";
 			oThis.bSayHiDone = false;
 			oThis.recognition;
