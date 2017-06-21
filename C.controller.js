@@ -108,10 +108,7 @@ sap.ui.define([
 				headers: {
 					"Authorization": "Bearer " + oThis.accessToken
 				},
-				data: JSON.stringify({
-					q: text,
-					lang: "en"
-				}),
+				data: JSON.stringify({query: text, lang: "en", sessionId: "yaydevdiner"}),
 
 				success: function (data) {
 					var msg = new SpeechSynthesisUtterance(data.result.speech);
